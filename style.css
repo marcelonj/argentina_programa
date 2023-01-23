@@ -1,0 +1,74 @@
+* {
+    background-color: #c0d4d8;
+    margin: 0px;
+    font-family: 'Asap', sans-serif;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #73a1b6;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5px 10px;
+}
+
+#logo_principal {
+    width: auto;
+    max-height: 30px;
+    margin: 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav ul {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav ul li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: #335379;
+    border-radius: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+article p {
+    width: 60%;
+    padding: 20% 5%;
+    font-size: 24px;
+}
+
+article h1 {
+    font-size: 32px;
+    padding: 3%;
+}
+/* Estilos pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height: 6%;
+    width: 100%;
+    background-color: #73a1b6;
+}
+
+footer div {
+    background-color: rgba(0, 0, 0, 0);
+}
