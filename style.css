@@ -108,3 +108,17 @@ footer div {
     flex-direction: column;
 }
 
+.decorador_lista {
+    list-style-image: url(Imagenes/cheque.png);
+}
+
+.experiencia {
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: auto;
+}
+
+h2 {
+    padding: 3% 10%;
+}
