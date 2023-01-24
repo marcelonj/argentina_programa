@@ -4,6 +4,10 @@
     font-family: 'Asap', sans-serif;
 }
 
+div {
+    display: inline;
+}
+
 ul {
     list-style: none;
 }
