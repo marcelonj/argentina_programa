@@ -122,3 +122,14 @@ footer div {
 h2 {
     padding: 3% 10%;
 }
+
+#dp {
+    padding: 35px 0px 10px;
+}
+
+#contenedor_foto {
+    margin: 25px 0px 35px;
+    padding: 0px;
+    border: solid black;
+    border-radius: 5px;
+}

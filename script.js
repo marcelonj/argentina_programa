@@ -8,6 +8,8 @@ function detectarDatosPersonales() {
                                  .then(response => response.json())
                                  .then(datos => datos)
             console.log(persona.results);
+            console.log();
+            document.getElementById('foto_perfil').setAttribute('src', persona.results[0].picture.large)
             document.getElementById('nombre').innerHTML = persona.results[0].name.first + ' ' + persona.results[0].name.last;
             document.getElementById('email_dp').innerHTML = persona.results[0].email;
             let fn = persona.results[0].dob.date;
@@ -20,8 +22,4 @@ function detectarDatosPersonales() {
     }
 }
 
-
-
-
 detectarDatosPersonales();
-
