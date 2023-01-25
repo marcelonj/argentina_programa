@@ -27,20 +27,24 @@
         </ul>
     </nav>
     <article class="columna">
-        <h1 id="dp">Datos personales</h1>
-        <div id="contenedor_foto"><img src="" alt="Foto de perfil" id="foto_perfil"></div>
-        <ul>
-            <li class="espaciado">Nombre y apellido: <div id="nombre"></div></li>
-            <li class="espaciado">Correo electronico: <div id="email_dp"></div></li>
-            <li class="espaciado">Fecha de nacimiento: <div id="fn_dp"></div></li>
-            <li class="espaciado">Edad: <div id="edad_dp"></div></li>
-            <li class="espaciado">Dirección: <div id="direccion_dp"></div></li>
-            <li class="espaciado">Teléfono: <div id="telefono_dp"></div></li>
-        </ul>
+        <h1>Formulario de contacto</h1>
+        <p class="estrecho">Si está interesado en coordinar una entrevista u obtener más información que considere necesaria no dude en completar el siguiente formulario!</p>
     </article>
+    <form autocomplete="on" class="columna">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="mombre" id="nombre" class="inputs" placeholder="Ingrese su nombre" required>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono"class="inputs" placeholder="Ingrese su teléfono">
+        <label for="mail">Email</label>
+        <input type="email" name="mail" id="mail"class="inputs" placeholder="Ingrese su email" required>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Ingrese cualquier comentario que considere pertinente"></textarea>
+        <input type="submit" id="enviar">
+        <div id="mensaje" class="oculto">Enviado</div>
+    </form>
     <footer>
         <div>&copy; Todos los derechos reservados | Marcelo Jurado</div>
     </footer>
-    <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>

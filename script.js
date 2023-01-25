@@ -1,6 +1,5 @@
-/* 
-Esta función primero determina sei estamos en la página de información personal, y de ser así se conecta a la API de Random User para obtener datos de una persona e insertarlos en el DOM.
-*/
+//Esta función primero determina si estamos en la página de información personal, y de ser así se conecta a la API de Random User para obtener datos de una persona e insertarlos en el DOM.
+
 function detectarDatosPersonales() {
     if (document.getElementById('dp')){
         async function obtenerPersona(){
@@ -55,4 +54,27 @@ else if (document.getElementById('experiencia_laboral')){
     boton_mesero.addEventListener("click", () => mostrar_ocultar('mesero'));
 }
 
+function mensaje_temporizado(){
+    let mail_ok = false
+    let nombre = document.getElementById('nombre').value;
+    let mail = document.getElementById('mail').value;
+    for (let i = 0; i < mail.length; i++) { //Este ciclo for valida el email antes de mostrar el mensaje
+        if (mail.charAt(i) == '@'){
+            for (let j = i; j < mail.length; j++) {
+                if (mail.charAt(j) == '.'){
+                    mail_ok = true
+                }
+            }
+        }        
+    }
 
+    if (nombre != '' && mail_ok) {
+        alert("Se ha enviado su información")
+        document.getElementById('mensaje').classList.remove('oculto');
+        setTimeout(() => document.getElementById('mensaje').classList.add('oculto'), 3000);        
+    }
+}
+
+if (document.getElementById('mensaje')){
+    enviar.addEventListener("click", mensaje_temporizado)
+}

@@ -145,3 +145,37 @@ button {
     border-radius: 10px;
     background-color: rgba(127, 255, 212, 0.192);
 }
+
+.estrecho {
+    height: 10%;
+    padding: 20px;
+}
+
+.inputs {
+    max-width: 30%;
+    margin: 10px;
+    border: solid black 2px;
+    border-radius: 5px;
+}
+
+form {
+    padding: 5% 20%;
+}
+
+#enviar {
+    margin: 25px 0px;
+    padding: 10px;
+    border: solid black 2px;
+    border-radius: 10px;
+    font-weight: 800;
+    background-color: #0a751886;
+}
+
+#mensaje {
+    background-color: green;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
