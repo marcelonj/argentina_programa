@@ -121,6 +121,8 @@ footer div {
 
 h2 {
     padding: 3% 10%;
+    width: 100%;
+    text-align: center;
 }
 
 #dp {
@@ -132,4 +134,14 @@ h2 {
     padding: 0px;
     border: solid black;
     border-radius: 5px;
+}
+
+.oculto {
+    display: none;
+}
+
+button {
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: rgba(127, 255, 212, 0.192);
 }

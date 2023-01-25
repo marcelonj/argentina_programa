@@ -23,3 +23,24 @@ function detectarDatosPersonales() {
 }
 
 detectarDatosPersonales();
+
+//Función que muestra u oculta el contenido al interactuar con un botón
+let estado = false;
+function mostrar_ocultar(div) {
+    console.log(estado);
+    console.log('Disparo');
+    if (estado == false) {
+        document.getElementById('contenedor_'+div).classList.remove('oculto');
+        estado = true;
+    }
+    else{
+        document.getElementById('contenedor_'+div).classList.add('oculto');
+        estado = false;
+    }
+}
+
+let boton_representante = document.getElementById('boton_representante');
+boton_representante.addEventListener("click", () => mostrar_ocultar('representante'));
+
+let boton_mesero = document.getElementById('boton_mesero');
+boton_mesero.addEventListener("click", () => mostrar_ocultar('mesero'));
