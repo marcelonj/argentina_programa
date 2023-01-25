@@ -4,13 +4,6 @@
     font-family: 'Asap', sans-serif;
 }
 
-div {
-    display: inline;
-}
-
-ul {
-    list-style: none;
-}
 /* Estilos de la barra de navegación */
 nav {
     display: flex;
@@ -62,7 +55,25 @@ a:hover {
     padding: 10px;
 }
 
-/* Estilos del cuerpo */
+/* Estilos pie de página */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height: 6%;
+    width: 100%;
+    background-color: #73a1b6;
+}
+
+footer div {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Estilos de etiquetas */
+
 article {
     display: flex;
     flex-direction: row;
@@ -82,31 +93,31 @@ article h1 {
     padding: 3%;
 }
 
-.espaciado {
-    margin-bottom: 30px;
+div {
+    display: inline;
 }
 
-/* Estilos pie de página */
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height: 6%;
+ul {
+    list-style: none;
+}
+
+h2 {
+    padding: 3% 10%;
     width: 100%;
-    background-color: #73a1b6;
+    text-align: center;
 }
 
-footer div {
-    background-color: rgba(0, 0, 0, 0);
+button {
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: rgba(127, 255, 212, 0.192);
 }
 
-.columna {
-    display: flex;
-    flex-direction: column;
+form {
+    padding: 5% 20%;
 }
+
+/* Estilos de clases */
 
 .decorador_lista {
     list-style-image: url(Imagenes/cheque.png);
@@ -119,31 +130,8 @@ footer div {
     margin: auto;
 }
 
-h2 {
-    padding: 3% 10%;
-    width: 100%;
-    text-align: center;
-}
-
-#dp {
-    padding: 35px 0px 10px;
-}
-
-#contenedor_foto {
-    margin: 25px 0px 35px;
-    padding: 0px;
-    border: solid black;
-    border-radius: 5px;
-}
-
 .oculto {
     display: none;
-}
-
-button {
-    border: solid black 2px;
-    border-radius: 10px;
-    background-color: rgba(127, 255, 212, 0.192);
 }
 
 .estrecho {
@@ -158,9 +146,16 @@ button {
     border-radius: 5px;
 }
 
-form {
-    padding: 5% 20%;
+.columna {
+    display: flex;
+    flex-direction: column;
 }
+
+.espaciado {
+    margin-bottom: 30px;
+}
+
+/* Estilos de ids */
 
 #enviar {
     margin: 25px 0px;
@@ -178,4 +173,15 @@ form {
     color: white;
     font-weight: 800;
     font-size: 20px;
+}
+
+#dp {
+    padding: 35px 0px 10px;
+}
+
+#contenedor_foto {
+    margin: 25px 0px 35px;
+    padding: 0px;
+    border: solid black;
+    border-radius: 5px;
 }
