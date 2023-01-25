@@ -38,8 +38,7 @@ function mostrar_ocultar(div) {
     }
 }
 
-
-
+//Se determina que elemento se mostrara u ocultara
 if (document.getElementById('estudios')){
     let boton_universidad = document.getElementById('boton_universidad');
     boton_universidad.addEventListener("click", () => mostrar_ocultar('universidad'));
@@ -75,6 +74,7 @@ function mensaje_temporizado(){
     }
 }
 
+//Se dispara la finción mensaje_temporizado al hacer click en el botón enviar
 if (document.getElementById('mensaje')){
     enviar.addEventListener("click", mensaje_temporizado)
 }
