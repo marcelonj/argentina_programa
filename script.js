@@ -39,11 +39,11 @@ function mostrar_ocultar(div) {
 }
 
 //Se determina que elemento se mostrara u ocultara
-if (document.getElementById('estudios')){
-    let boton_universidad = document.getElementById('boton_universidad');
-    boton_universidad.addEventListener("click", () => mostrar_ocultar('universidad'));
-    let boton_curoso = document.getElementById('boton_curoso');
-    boton_curoso.addEventListener("click", () => mostrar_ocultar('curso'));
+if (document.getElementById('habilidades')){
+    let boton_tecnicas = document.getElementById('boton_tecnicas');
+    boton_tecnicas.addEventListener("click", () => mostrar_ocultar('tecnicas'));
+    let boton_blandas = document.getElementById('boton_blandas');
+    boton_blandas.addEventListener("click", () => mostrar_ocultar('blandas'));
 }
 else if (document.getElementById('experiencia_laboral')){
     let boton_representante = document.getElementById('boton_representante');
